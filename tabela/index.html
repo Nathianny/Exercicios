@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            border: 2px solid rgb(140 140 140);
+            font-family: sans-serif;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+          }
+          
+          caption {
+            caption-side: bottom;
+            padding: 10px;
+            font-weight: bold;
+          }
+          
+          thead,
+          tfoot {
+            background-color: rgb(228 240 245);
+          }
+          
+          th,
+          td {
+            border: 1px solid rgb(160 160 160);
+            padding: 8px 10px;
+          }
+          
+          td:last-of-type {
+            text-align: center;
+          }
+          
+          tbody > tr:nth-of-type(even) {
+            background-color: rgb(237 238 242);
+          }
+          
+          tfoot th {
+            text-align: right;
+          }
+          
+          tfoot td {
+            font-weight: bold;
+          }
+    </style>
+</head>
+<body>
+    
+  <h1 style="background-color: rgb(0, 157, 255)">TABELA DE DOCUMENTOS</h1>
+
+  <!-- tabela -->
+   
+    <table>
+        <caption>
+          Front-end web developer course 2021
+        </caption>
+        <thead>
+          <tr>
+            <th scope="col">Pessoa</th>
+            <th scope="col">Especialidade</th>
+            <th scope="col">Experiência</th>
+            <th scope="col">Salário</th>
+          </tr>
+        </thead>
+        <!-- corpo da tabela -->
+        <tbody>
+          <tr>
+            <th scope="row">Nathianny</th>
+            <td>Programação WEB</td>
+            <td>9</td>
+            <td>R$4.000</td>
+          </tr>
+          <tr>
+            <th scope="row">Dennis</th>
+            <td>Desenvolvedor de Software</td>
+            <td>20</td>
+            <td>R$15.000</td>
+          </tr>
+          <tr>
+            <th scope="row">Sarah</th>
+            <td>Analista de Segurança da Informação</td>
+            <td>5</td>
+            <td>R$8.000</td>
+          </tr>
+          <tr>
+            <th scope="row">Arthur</th>
+            <td>Engenheiro de Dados</td>
+            <td>10</td>
+            <td>R$14.000</td>
+          </tr>
+        </tbody>
+        <!-- footer da tabela -->
+        <tfoot>
+          <tr>
+            <th scope="row" colspan="2">Average age</th>
+            <td>25</td>
+          </tr>
+        </tfoot>
+      </table>
+</body>
+</html>
